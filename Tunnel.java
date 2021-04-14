@@ -20,8 +20,8 @@ public class Tunnel extends Stage{
             }catch (InterruptedException e){
                 e.printStackTrace();
             } finally {
-                semaphore.release();
                 System.out.println(c.getName() + " закончил этап " + description);
+                semaphore.release();
             }
         }catch (Exception e){
             e.printStackTrace();
